@@ -16,11 +16,16 @@
 }
 
 
+
 body {
     background-image: url(../imagens/bg.jpg);
+    background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-color: black;
 }
+
 
 .titulo {
     font-family: 'ring';
@@ -87,14 +92,18 @@ body {
 
 .rodape {
     background-color: rgba(49, 77, 88, 0.8);
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     display: flex;
     align-content: space-around;
     align-items: center;
+    z-index: 999;
+    margin-bottom: 0px;
+    margin-top: 7.7%;
 }
+
 
 .rodape p {
     font-family: 'ring';
@@ -105,3 +114,23 @@ body {
     text-align: center;
 }
 
+@media (max-width: 700px){
+
+    .rodape p {
+        font-size: small;
+    }
+
+    .rodape {
+        height: 40px;
+    }
+
+    .botoes {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .personagem {
+        margin-bottom: 30px;
+    }
+    
+}
