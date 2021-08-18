@@ -132,5 +132,9 @@ body {
     .personagem {
         margin-bottom: 30px;
     }
+
+    .zerou {
+        font-size: 250%;
+    }
     
 }
